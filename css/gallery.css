@@ -1,0 +1,19 @@
+.gallery {
+    display: flex; /* Розташування елементів у ряд */
+    gap: 20px; /* Відступи між елементами */
+    flex-wrap: nowrap; /* Забороняє перехід елементів на інший ряд */
+    justify-content: space-between; /* Рівний розподіл простору */
+    align-items: flex-start; /* Вирівнює елементи по верхньому краю */
+}
+
+.gallery .img-box {
+    width: calc((100% - 60px) / 4); /* Розрахунок ширини для 4 елементів із урахуванням відступів */
+    box-sizing: border-box; /* Включає padding та border у ширину */
+    text-align: center; /* Центрує підписи під зображеннями */
+}
+
+.gallery img {
+    width: 100%; /* Робить зображення адаптивними */
+    height: auto; /* Зберігає пропорції */
+    display: block; /* Забирає зайві відступи */
+}
